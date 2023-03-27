@@ -2,9 +2,9 @@ from tkinter import *
 
 
 def calculate():
-    miles = int(user_input.get())
-    km = round(miles * 1.6)
-    calculation.config(text=km)
+    miles = float(user_input.get())
+    km = miles * 1.6
+    calculation.config(text=f"{km:.2f}")
 
 
 window = Tk()
